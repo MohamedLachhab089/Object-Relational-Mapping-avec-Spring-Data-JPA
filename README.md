@@ -21,15 +21,15 @@ public class Patient {
     private int score;
 }
 
-- ## `@Entity`: Cette annotation indique que la classe `Patient` est une entité JPA, ce qui signifie qu'elle sera persistée dans la base de données.
-- ## `@Data`: C'est une annotation de Lombok qui génère automatiquement les méthodes `toString`, `equals`, `hashCode`, ainsi que les getters et setters pour tous les champs de la classe.
-- ## `@NoArgsConstructor` et `@AllArgsConstructor`: Ces annotations de Lombok génèrent des constructeurs sans argument et avec tous les arguments respectivement.
+- `@Entity`: Cette annotation indique que la classe `Patient` est une entité JPA, ce qui signifie qu'elle sera persistée dans la base de données.
+- `@Data`: C'est une annotation de Lombok qui génère automatiquement les méthodes `toString`, `equals`, `hashCode`, ainsi que les getters et setters pour tous les champs de la classe.
+- `@NoArgsConstructor` et `@AllArgsConstructor`: Ces annotations de Lombok génèrent des constructeurs sans argument et avec tous les arguments respectivement.
 
 Ensuite, nous avons une interface `PatientRepository` qui étend `JpaRepository` :
 
-## public interface PatientRepository extends JpaRepository<Patient, Long> {
+`public interface PatientRepository extends JpaRepository<Patient, Long> {
     // Méthodes personnalisées si nécessaire
-## }
+}`
 
 
 Cette interface permet d'effectuer des opérations CRUD sur l'entité `Patient`.
