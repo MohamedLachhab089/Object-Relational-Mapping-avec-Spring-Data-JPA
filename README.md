@@ -1,7 +1,8 @@
-# Projet Object Relational Mapping avec Spring Data JPA
+# Projet ORM avec Spring Data JPA
 
 Ce projet utilise Spring Data JPA pour interagir avec une base de données relationnelle. Nous avons une classe `Patient` qui représente une entité dans notre système. Voici pourquoi nous utilisons les annotations spécifiques :
 
+```java
 @Entity
 @Data
 @NoArgsConstructor
@@ -20,6 +21,7 @@ public class Patient {
     private boolean malade;
     private int score;
 }
+```
 
 - `@Entity`: Cette annotation indique que la classe `Patient` est une entité JPA, ce qui signifie qu'elle sera persistée dans la base de données.
 - `@Data`: C'est une annotation de Lombok qui génère automatiquement les méthodes `toString`, `equals`, `hashCode`, ainsi que les getters et setters pour tous les champs de la classe.
@@ -27,10 +29,11 @@ public class Patient {
 
 Ensuite, nous avons une interface `PatientRepository` qui étend `JpaRepository` :
 
-`public interface PatientRepository extends JpaRepository<Patient, Long> {
+```java
+public interface PatientRepository extends JpaRepository<Patient, Long> {
     // Méthodes personnalisées si nécessaire
-}`
-
+}
+```
 
 Cette interface permet d'effectuer des opérations CRUD sur l'entité `Patient`.
 
