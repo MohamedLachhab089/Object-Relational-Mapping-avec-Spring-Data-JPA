@@ -1,5 +1,4 @@
-# Object-Relational-Mapping-avec-Spring-Data-JPA
-# Projet ORM avec Spring Data JPA
+# Projet Object Relational Mapping avec Spring Data JPA
 
 Ce projet utilise Spring Data JPA pour interagir avec une base de données relationnelle. Nous avons une classe `Patient` qui représente une entité dans notre système. Voici pourquoi nous utilisons les annotations spécifiques :
 
